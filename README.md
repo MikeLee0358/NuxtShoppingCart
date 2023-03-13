@@ -3,20 +3,19 @@
 
 
 ## 目的
-練習Nuxt3和Pinia狀態管理、串接API。
+練習Nuxt3、Pinia狀態管理、串接API和typeScript。
 
 ## 安裝相關套件
-
 ```bash
 npm install
 ```
 
-## 開啟Nuxt伺服器
+## 開啟Nuxt Server
 ```bash
 npm run dev
 ```
 
-## 開啟JSON伺服器(練習串接API用)
+## 開啟JSON Server(串接API)
 ```bash
 json-server -p 3000 ./data/db.json
 ```
