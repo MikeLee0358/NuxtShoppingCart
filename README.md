@@ -1,42 +1,22 @@
-# Nuxt 3 Minimal Starter
+# 購物車API練習
+<img width="1430" alt="截圖 2023-03-13 下午2 55 33" src="https://user-images.githubusercontent.com/108295892/224629045-736dee7f-1230-4f5a-806d-b8004296e513.png">
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+## 目的
+練習Nuxt3和Pinia狀態管理、串接API。
 
-Make sure to install the dependencies:
+## 安裝相關套件
 
 ```bash
-# yarn
-yarn install
-
-# npm
 npm install
-
-# pnpm
-pnpm install
 ```
 
-## Development Server
-
-Start the development server on http://localhost:3000
-
+## 開啟Nuxt伺服器
 ```bash
 npm run dev
 ```
 
-## Production
-
-Build the application for production:
-
+## 開啟JSON伺服器(練習串接API用)
 ```bash
-npm run build
+json-server -p 3000 ./data/db.json
 ```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
