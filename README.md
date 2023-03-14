@@ -5,8 +5,10 @@
 ## 目的
 練習Nuxt3、Pinia狀態管理、串接API和typeScript。
 
-## 安裝相關套件
+## 啟動專案
 ```bash
+git clone git@github.com:MikeLee0358/NuxtShoppingCart.git
+cd NuxtShoppingCart
 npm install
 ```
 

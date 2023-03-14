@@ -23,6 +23,14 @@
       "img": "/img/ring.png",
       "id": 4,
       "quantity": 1
+    },
+    {
+      "title": "Poison Hammer",
+      "price": 100,
+      "description": "Hammer infused with posion gem magic.",
+      "img": "/img/hammer.png",
+      "id": 2,
+      "quantity": 1
     }
   ],
   "products": [
