@@ -9,7 +9,7 @@
 
 <script setup>
 //fetch data
-const { data: products } = await useFetch("http://localhost:3000/products");
+const { data: products } = await useFetch("http://localhost:4000/products");
 </script>
 
 <style scoped></style>

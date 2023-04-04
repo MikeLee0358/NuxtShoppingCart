@@ -12,12 +12,12 @@ cd NuxtShoppingCart
 npm install
 ```
 
-## 開啟Nuxt Server
+## 本地端運行
 ```bash
 npm run dev
 ```
 
-## 開啟JSON Server(串接API)
+## 開啟JSON Server(供串接API)
 ```bash
-json-server -p 3000 ./data/db.json
+json-server -p 4000 ./data/db.json
 ```

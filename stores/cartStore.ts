@@ -1,4 +1,4 @@
-import { defineStore } from "pinia";
+// import { defineStore } from "pinia";
 
 export const useCartStore = defineStore("cart", {
   state: (): any => ({
@@ -18,12 +18,12 @@ export const useCartStore = defineStore("cart", {
   },
   actions: {
     async getCart() {
-      const data = await $fetch("http://localhost:3000/cart");
+      const data = await $fetch("http://localhost:4000/cart");
       this.cart = data;
     },
     async deleteFromCart(product: any) {
       this.cart = this.cart.filter((p: any) => product !== p);
-      await $fetch("http://localhost:3000/cart/" + product.id, {
+      await $fetch("http://localhost:4000/cart/" + product.id, {
         method: "delete",
       });
     },
@@ -37,7 +37,7 @@ export const useCartStore = defineStore("cart", {
         return p;
       });
       // make put request
-      await $fetch("http://localhost:3000/cart/" + product.id, {
+      await $fetch("http://localhost:4000/cart/" + product.id, {
         method: "PUT",
         body: JSON.stringify(updateProduct),
       });
@@ -53,7 +53,7 @@ export const useCartStore = defineStore("cart", {
       });
       if (updateProduct) {
         // make put request
-        await $fetch("http://localhost:3000/cart/" + product.id, {
+        await $fetch("http://localhost:4000/cart/" + product.id, {
           method: "PUT",
           body: JSON.stringify(updateProduct),
         });
@@ -67,7 +67,7 @@ export const useCartStore = defineStore("cart", {
       if (!exists) {
         this.cart.push({ ...product, quantity: 1 });
 
-        await $fetch("http://localhost:3000/cart", {
+        await $fetch("http://localhost:4000/cart", {
           method: "post",
           body: JSON.stringify({ ...product, quantity: 1 }),
         });
